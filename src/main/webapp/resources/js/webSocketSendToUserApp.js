@@ -1,3 +1,5 @@
+var ws = null;
+
 function connect() {
     var socket = new WebSocket('ws://localhost:8080/greeting');
     ws = Stomp.over(socket);
